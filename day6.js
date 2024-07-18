@@ -64,18 +64,45 @@ console.log(`Array after element added : ${arrNums}`);
 
 //Activity 3 : Array Methods (Intermediate)
 console.log("\nActivity 3 : Array Methods (Intermediate)");
+/*
+map() : transform elements of array using fn and creates a new array with transformed elements
+does not modify the original array.
 
+Syntax :  map(callbackFn)
+         map(callbackFn,thisArg)
+
+const newArray = array.map(item => transformedValue);
+
+*/
 console.log("\nTask 7");
 let arr1=[2,4,6,8];
 let arrMap=arr1.map((x) => x*2);
 console.log(arrMap);
 
 console.log("\nTask 8");
+/*
+filter() :  creates a new array that meets a specific condition
+
+Syntax : filter(callbackFn)
+        filter(callbackFn,thisArg)
+
+const filteredArray = array.filter(item => condition);
+
+*/
 let arr2=[1,2,4,66,43,23,78,65,43,23]
 let arrayFilter=arr2.filter((x) => x%2==0);
 console.log(arrayFilter);
 
 console.log("\nTask 9");
+/*
+reduce() :  combines all elements of array into a single value
+
+Syntax :  reduce(callbackFn)
+          reduce(callbackFn, initialValue)
+
+const result = array.reduce((accumulator, currentValue) => accumulator + currentValue, initialValue);
+
+*/
 let arr3=[1,2,4,5];
 let totalSum=arr3.reduce(
     (sum,value) => sum+value
@@ -107,7 +134,6 @@ printArrayElements2(arr1);
 
 //Activity 5 : Multi-dimensional Arrays
 console.log("\nActivity 5 : Multi-dimensional Arrays");
-
 console.log("\nTask 11");
 let multiArray=[[1,2,3],[4,5,6],[7,8,9]];
 console.log(multiArray);
