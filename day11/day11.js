@@ -85,23 +85,23 @@ async function consumePromiseFive() {
    console.log("Response of promise Four consumed by the async fn :",response);  
     }
     catch(err){
-        console.log(err);
+        console.error(err);
     }
 }
 consumePromiseFive()
 
-// Task 6
-// const apiUrl='https://jsonplaceholder.typicode.com/users'
-// fetch(apiUrl)
-// .then((response) => {
-//  return response.json()
-// })
-// .then((data) => {
-//     console.log("Task 6 :",data);
-// })
-// .catch((err) => {
-//     console.log("Error in fetching the api",err);
-// })
+//Task 6
+const apiUrl='https://jsonplaceholder.typicode.com/users'
+fetch(apiUrl)
+.then((response) => {
+ return response.json()
+})
+.then((data) => {
+    console.log("Task 6 :",data);
+})
+.catch((err) => {
+    console.log("Error in fetching the api",err);
+})
 
 //Task 7
 async function fetchUsingAsync() {
@@ -114,7 +114,7 @@ async function fetchUsingAsync() {
         console.log("Error occurred in task 7");
     }  
 }
-// fetchUsingAsync()
+fetchUsingAsync()
 
 
 //Task 8
