@@ -4,27 +4,34 @@ class Account{
         this.#balance=initBalance
     }
     depositeMoney(amt){
-              if(amt<0){
+            if(amt<0)
+              {
                 console.log("Amount deposited should be positive");
-              } else { 
-            this.#balance+=amt
-            console.log(`Your current balance is now ${this.#balance}`);
+              } 
+            else { 
+                   this.#balance+=amt
+                  console.log(`Your current balance is now ${this.#balance}`);
               }
     }
     withDrawMoney(amt){
-        if(amt<0){
+        if(amt<0)
+        {
             console.log("Amount withdrawn should be positive");
         }
-        if(amt > this.#balance){
+        if(amt > this.#balance)
+        {
             console.log(`Insufficient balance ! Your Current balance  ${this.#balance}`);
         }
-        else{
+        else
+        {
             this.#balance-=amt;
             console.log(`Amount withdraw ${amt} ,Your balance :${this.#balance}`);
         }
         console.log(`Your Current balance is ${this.#balance}`);
     }
-    getbalance(){
+    
+    getbalance()
+    {
         console.log(`Your Current balance is ${this.#balance}`);
     }
 }
