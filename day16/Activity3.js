@@ -8,13 +8,16 @@ function reverseString(str) {
 console.log(reverseString("hello"));
 
 //Task 2
-function checkPalindrome(str,st,ed) {
-    if(sted){
+function checkPalindrome(str,ind) {
+      if(ind>=str.length/2){
         return true;
-    }
-    if(str.charAt(st)!=str.charAt(ed)){
+      }
+      if(str.charAt(ind)!=str.charAt(str.length-ind-1)){
         return false;
-    } 
-       return checkPalindrome(str,0,str.length);
+      }
+     return checkPalindrome(str,ind+1);
+    
+    
 }
-console.log(checkPalindrome("aba"));
+let result=checkPalindrome("madam",0)
+console.log(result);
